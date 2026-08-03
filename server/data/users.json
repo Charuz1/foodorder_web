@@ -1,0 +1,38 @@
+[
+  {
+    "id": "user_admin",
+    "name": "Platform Admin",
+    "email": "admin@hungryorder.com",
+    "password": "$2a$10$GDj.AJ4lG0sGPgLu9OA4Lu5E0Ix4nZoOrQGDETaxEjJKI1epYzmH.",
+    "phone": "1234567890",
+    "address": "Admin Headquarters, Metro City",
+    "role": "admin"
+  },
+  {
+    "id": "user_rest",
+    "name": "Gourmet Owner",
+    "email": "restaurant@hungryorder.com",
+    "password": "$2a$10$GDj.AJ4lG0sGPgLu9OA4LuLKtiSetf7psAaOuRvIHsZq/dTj1UpV2",
+    "phone": "0987654321",
+    "address": "Food Street, Sector 5",
+    "role": "restaurant"
+  },
+  {
+    "id": "user_cust",
+    "name": "John Doe",
+    "email": "user@hungryorder.com",
+    "password": "$2a$10$GDj.AJ4lG0sGPgLu9OA4LuaZ4evgA1M9RpG5BOsTUrGYHu8N51xKe",
+    "phone": "5551234567",
+    "address": "123 Maple Street, Apt 4B",
+    "role": "customer"
+  },
+  {
+    "id": "use_1784544046176_r4a0z",
+    "name": "Herath W.M.C.W",
+    "email": "herath@gmail.com",
+    "password": "$2a$10$znRk4w.T7z7lJQEDFemB.eilReIpCLt4ux.8cQW639x38EDkxrNGS",
+    "phone": "0769118050",
+    "address": "",
+    "role": "customer"
+  }
+]

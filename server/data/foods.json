@@ -1,0 +1,125 @@
+[
+  {
+    "id": "food_1",
+    "restaurantId": "rest_1",
+    "title": "Margherita Wood-Fired Pizza",
+    "image": "https://images.unsplash.com/photo-1604382354936-07c5d9983bd3?auto=format&fit=crop&w=600&q=80",
+    "price": 14.99,
+    "description": "Fresh mozzarella, tomato sauce, basil leaves, and a drizzle of olive oil.",
+    "ingredients": [
+      "Mozzarella",
+      "Basil",
+      "Tomato Sauce",
+      "Olive Oil"
+    ],
+    "category": "Pizza"
+  },
+  {
+    "id": "food_2",
+    "restaurantId": "rest_1",
+    "title": "Creamy Truffle Fettuccine",
+    "image": "https://images.unsplash.com/photo-1645112411341-6c4fd023714a?auto=format&fit=crop&w=600&q=80",
+    "price": 18.5,
+    "description": "Fettuccine pasta tossed in wild mushroom truffle cream sauce.",
+    "ingredients": [
+      "Fettuccine",
+      "Mushrooms",
+      "Truffle Oil",
+      "Cream"
+    ],
+    "category": "Pasta"
+  },
+  {
+    "id": "food_3",
+    "restaurantId": "rest_2",
+    "title": "Thai Red Curry Chicken",
+    "image": "https://images.unsplash.com/photo-1455619452474-d2be8b1e70cd?auto=format&fit=crop&w=600&q=80",
+    "price": 15.99,
+    "description": "Rich, spicy coconut milk curry served with tender chicken and jasmine rice.",
+    "ingredients": [
+      "Chicken",
+      "Red Curry Paste",
+      "Coconut Milk",
+      "Jasmine Rice"
+    ],
+    "category": "Curry"
+  },
+  {
+    "id": "food_4",
+    "restaurantId": "rest_2",
+    "title": "Chicken Pad Thai",
+    "image": "https://images.unsplash.com/photo-1559314809-0d155014e29e?auto=format&fit=crop&w=600&q=80",
+    "price": 13.99,
+    "description": "Stir-fried rice noodles with tofu, egg, bean sprouts, and crushed peanuts.",
+    "ingredients": [
+      "Noodles",
+      "Peanuts",
+      "Bean Sprouts",
+      "Egg",
+      "Tofu"
+    ],
+    "category": "Noodles"
+  },
+  {
+    "id": "food_5",
+    "restaurantId": "rest_3",
+    "title": "The Ultimate Double Smashed Burger",
+    "image": "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=600&q=80",
+    "price": 12.99,
+    "description": "Two angus beef patties, cheddar cheese, secret burger sauce, and pickle slices.",
+    "ingredients": [
+      "Angus Beef",
+      "Cheddar",
+      "Secret Sauce",
+      "Pickles",
+      "Brioche Bun"
+    ],
+    "category": "Burger"
+  },
+  {
+    "id": "food_6",
+    "restaurantId": "rest_3",
+    "title": "Truffle Parmesan Loaded Fries",
+    "image": "https://images.unsplash.com/photo-1573080496219-bb080dd4f877?auto=format&fit=crop&w=600&q=80",
+    "price": 8.99,
+    "description": "Crisp french fries coated in truffle oil, topped with aged parmesan and parsley.",
+    "ingredients": [
+      "Fries",
+      "Truffle Oil",
+      "Parmesan",
+      "Parsley"
+    ],
+    "category": "Sides"
+  },
+  {
+    "id": "food_7",
+    "restaurantId": "rest_4",
+    "title": "Signature Dragon Roll",
+    "image": "https://images.unsplash.com/photo-1611143669185-af224c5e3252?auto=format&fit=crop&w=600&q=80",
+    "price": 16.99,
+    "description": "Eel and cucumber topped with avocado slices, tobiko, and unagi glaze.",
+    "ingredients": [
+      "Eel",
+      "Avocado",
+      "Cucumber",
+      "Tobiko",
+      "Rice"
+    ],
+    "category": "Sushi"
+  },
+  {
+    "id": "food_8",
+    "restaurantId": "rest_4",
+    "title": "Premium Sashimi Platter",
+    "image": "https://images.unsplash.com/photo-1534482421-64566f976cfa?auto=format&fit=crop&w=600&q=80",
+    "price": 24.99,
+    "description": "Assortment of fresh salmon, tuna, and red snapper slices served with wasabi.",
+    "ingredients": [
+      "Salmon",
+      "Tuna",
+      "Red Snapper",
+      "Wasabi"
+    ],
+    "category": "Sushi"
+  }
+]

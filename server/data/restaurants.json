@@ -1,0 +1,38 @@
+[
+  {
+    "id": "rest_1",
+    "name": "Gourmet Garden",
+    "image": "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=800&q=80",
+    "description": "Authentic Italian pasta, wood-fired pizzas, and rich desserts.",
+    "rating": 4.8,
+    "category": "Italian",
+    "ownerId": "user_rest"
+  },
+  {
+    "id": "rest_2",
+    "name": "Spicy Street",
+    "image": "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=800&q=80",
+    "description": "Flavorful Asian bowls, traditional curry, and hot street bites.",
+    "rating": 4.6,
+    "category": "Asian",
+    "ownerId": "user_rest"
+  },
+  {
+    "id": "rest_3",
+    "name": "Burger Hub",
+    "image": "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=800&q=80",
+    "description": "Juicy smashed burgers, loaded fries, and premium craft milkshakes.",
+    "rating": 4.7,
+    "category": "American",
+    "ownerId": "user_rest"
+  },
+  {
+    "id": "rest_4",
+    "name": "Sushi Wave",
+    "image": "https://images.unsplash.com/photo-1579871494447-9811cf80d66c?auto=format&fit=crop&w=800&q=80",
+    "description": "Fresh sashimi, traditional maki rolls, and premium seafood delights.",
+    "rating": 4.9,
+    "category": "Japanese",
+    "ownerId": "user_rest"
+  }
+]
