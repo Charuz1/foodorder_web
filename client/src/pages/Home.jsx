@@ -68,9 +68,6 @@ const Home = () => {
       {/* Hero Banner Section */}
       <section className="hero-section glass-card">
         <div className="hero-content">
-          <div className="hero-badge">
-            ⚡ Hungry? We got you covered
-          </div>
           <h1 className="hero-title">
             Fast. Fresh.<br />
             <span>Delivered.</span>
