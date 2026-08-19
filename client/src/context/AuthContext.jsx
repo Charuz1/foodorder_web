@@ -56,7 +56,7 @@ export const AuthProvider = ({ children }) => {
       });
       const data = await response.json();
       if (!response.ok) {
-        throw new Error(data.message || 'Login failed');
+        throw new Error(data.error ? `${data.message}: ${data.error}` : (data.message || 'Login failed'));
       }
       setToken(data.token);
       setUser(data.user);
@@ -77,7 +77,7 @@ export const AuthProvider = ({ children }) => {
       });
       const data = await response.json();
       if (!response.ok) {
-        throw new Error(data.message || 'Registration failed');
+        throw new Error(data.error ? `${data.message}: ${data.error}` : (data.message || 'Registration failed'));
       }
       setToken(data.token);
       setUser(data.user);
