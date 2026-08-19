@@ -30,17 +30,18 @@ const Auth = () => {
         navigate(redirect);
       }
     } else {
-      // Prior to registration, request OTP
-      setTempUserData({ name, email, password, phone, address, role });
-      setOtpSent(true);
-      showNotification('Simulated OTP code sent to your phone! Use code: 1234', 'info');
+      // Register directly without OTP
+      const res = await register(name, email, password, phone, address, role);
+      if (res.success) {
+        navigate(redirect);
+      }
     }
   };
 
   const handleVerifyOtp = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch('http://localhost:5000/api/auth/verify-otp', {
+      const response = await fetch('/api/auth/verify-otp', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ email: tempUserData.email, otp: otpCode })

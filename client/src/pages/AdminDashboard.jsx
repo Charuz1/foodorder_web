@@ -14,7 +14,7 @@ const AdminDashboard = () => {
 
   const fetchAdminData = async () => {
     try {
-      const response = await fetch('http://localhost:5000/api/admin/stats', {
+      const response = await fetch('/api/admin/stats', {
         headers: {
           'Authorization': `Bearer ${localStorage.getItem('token')}`
         }
@@ -23,7 +23,7 @@ const AdminDashboard = () => {
         setStats(await response.json());
       }
 
-      const resUsers = await fetch('http://localhost:5000/api/admin/users', {
+      const resUsers = await fetch('/api/admin/users', {
         headers: {
           'Authorization': `Bearer ${localStorage.getItem('token')}`
         }
@@ -40,7 +40,7 @@ const AdminDashboard = () => {
 
   const handleRoleChange = async (userId, newRole) => {
     try {
-      const response = await fetch(`http://localhost:5000/api/admin/users/${userId}/role`, {
+      const response = await fetch(`/api/admin/users/${userId}/role`, {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json',

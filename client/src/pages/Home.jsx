@@ -24,7 +24,7 @@ const Home = () => {
 
   const fetchRestaurants = async () => {
     try {
-      const response = await fetch('http://localhost:5000/api/restaurants');
+      const response = await fetch('/api/restaurants');
       if (response.ok) {
         const data = await response.json();
         setRestaurants(data);
@@ -38,7 +38,7 @@ const Home = () => {
 
   const fetchFoods = async () => {
     try {
-      const response = await fetch('http://localhost:5000/api/foods');
+      const response = await fetch('/api/foods');
       if (response.ok) {
         const data = await response.json();
         setFoods(data);

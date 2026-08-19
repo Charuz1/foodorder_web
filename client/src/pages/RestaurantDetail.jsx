@@ -31,7 +31,7 @@ const RestaurantDetail = () => {
 
   const fetchRestaurantDetails = async () => {
     try {
-      const response = await fetch(`http://localhost:5000/api/restaurants/${id}`);
+      const response = await fetch(`/api/restaurants/${id}`);
       if (response.ok) {
         const data = await response.json();
         const { foods: menu, ...rest } = data;
@@ -47,7 +47,7 @@ const RestaurantDetail = () => {
 
   const fetchReviews = async () => {
     try {
-      const response = await fetch(`http://localhost:5000/api/reviews/restaurant/${id}`);
+      const response = await fetch(`/api/reviews/restaurant/${id}`);
       if (response.ok) {
         const data = await response.json();
         setReviews(data);
@@ -82,7 +82,7 @@ const RestaurantDetail = () => {
       return;
     }
     try {
-      const response = await fetch('http://localhost:5000/api/reviews', {
+      const response = await fetch('/api/reviews', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

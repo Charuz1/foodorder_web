@@ -27,14 +27,14 @@ const RestaurantDashboard = () => {
   const fetchRestaurantAndData = async () => {
     try {
       // 1. Fetch restaurants list to find the one owned by this owner
-      const resList = await fetch('http://localhost:5000/api/restaurants');
+      const resList = await fetch('/api/restaurants');
       if (resList.ok) {
         const list = await resList.json();
         const owned = list.find(r => r.ownerId === user.id);
         if (owned) {
           setRestaurant(owned);
           // Fetch food items for this restaurant
-          const resFoods = await fetch(`http://localhost:5000/api/foods?restaurantId=${owned.id}`);
+          const resFoods = await fetch(`/api/foods?restaurantId=${owned.id}`);
           if (resFoods.ok) {
             setFoods(await resFoods.json());
           }
@@ -42,7 +42,7 @@ const RestaurantDashboard = () => {
       }
 
       // 2. Fetch all orders
-      const resOrders = await fetch('http://localhost:5000/api/orders', {
+      const resOrders = await fetch('/api/orders', {
         headers: {
           'Authorization': `Bearer ${localStorage.getItem('token')}`
         }
@@ -57,7 +57,7 @@ const RestaurantDashboard = () => {
 
   const handleUpdateOrderStatus = async (orderId, newStatus) => {
     try {
-      const response = await fetch(`http://localhost:5000/api/orders/${orderId}/status`, {
+      const response = await fetch(`/api/orders/${orderId}/status`, {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json',
@@ -82,7 +82,7 @@ const RestaurantDashboard = () => {
     }
 
     try {
-      const response = await fetch('http://localhost:5000/api/foods', {
+      const response = await fetch('/api/foods', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -118,7 +118,7 @@ const RestaurantDashboard = () => {
   const handleDeleteFood = async (foodId) => {
     if (!window.confirm('Are you sure you want to delete this food item?')) return;
     try {
-      const response = await fetch(`http://localhost:5000/api/foods/${foodId}`, {
+      const response = await fetch(`/api/foods/${foodId}`, {
         method: 'DELETE',
         headers: {
           'Authorization': `Bearer ${localStorage.getItem('token')}`
