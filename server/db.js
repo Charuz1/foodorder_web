@@ -10,7 +10,9 @@ export const connectDB = async () => {
     await seedDatabase();
   } catch (error) {
     console.error('❌ MongoDB connection error:', error.message);
-    process.exit(1);
+    if (process.env.VERCEL !== '1') {
+      process.exit(1);
+    }
   }
 };
 
